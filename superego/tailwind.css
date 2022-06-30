@@ -1,0 +1,15 @@
+/*
+Theme Name: Superego
+Theme URI: https://superego.nu/
+Description: Dette tema er special udviklet af Superego.
+Author: Superego
+Author URI: https://superego.nu/
+Version: 1.0
+License: GNU General Public License & MIT
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Superego, SCSS, Responsive, AOS, Swiper, FancyBox, Lottie, Parallax
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
