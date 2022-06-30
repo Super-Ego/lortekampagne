@@ -51,10 +51,10 @@ Telefon: +45 78 70 29 29 - Email: horsens@superego.nu
 	endif; ?>
 
 	<div id="wrapper" class="wrapper">
-		<header id="main-header" class="header bg-secondary-l h-24 flex items-center fixed border-b border-b-secondary-b" role="banner" aria-label="Site header">
-			<div class="container flex flex-row justify-between items-center">
+		<header id="main-header" class="header bg-primary-d-2 h-24 flex items-center fixed" role="banner" aria-label="Site header">
+			<div class="w-screen mx-auto px-8 flex flex-row justify-between items-center">
 				<a id="site-logo" href="<?= get_home_url() ?>" title="<? wp_title(); ?>">
-					<?= svg_image("logo") ?>
+					<?= svg_image("cig") ?>
 				</a>
 				<nav id="main-navigation">
 					<? superego_top_nav(); ?>
