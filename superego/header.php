@@ -4,6 +4,10 @@ $code_head = get_theme_mod('setting_header_code');
 $code_body = get_theme_mod('setting_body_code');
 $theme_color = get_theme_mod('setting_theme_color');
 
+//$cig_video_url = wp_get_attachment_url(26);
+$cig_video_url = wp_get_attachment_url(27);
+
+
 // get global Mobile Detect
 global $detect;
 ?>
@@ -51,14 +55,35 @@ Telefon: +45 78 70 29 29 - Email: horsens@superego.nu
 	endif; ?>
 
 	<div id="wrapper" class="wrapper">
-		<header id="main-header" class="header bg-primary-d-2 h-24 flex items-center fixed" role="banner" aria-label="Site header">
-			<div class="w-screen mx-auto px-8 flex flex-row justify-between items-center">
-				<a id="site-logo" href="<?= get_home_url() ?>" title="<? wp_title(); ?>">
-					<?= svg_image("cig") ?>
-				</a>
-				<nav id="main-navigation">
-					<? superego_top_nav(); ?>
-				</nav>
-			</div>
+		<header id="main-header" class="header h-24 flex items-center fixed" role="banner" aria-label="Site header">
+			<div class="container mx-0 h-full bg-primary-d-2">
+				<div class="grid grid-cols-12 justify-center items-center h-full"> 				
+					<div class="col-span-10">	
+						<video src="<?= $cig_video_url ?>" id="cigVideo" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted"></video>
+					</div>
+
+					<div class="col-span-2">
+						<? if ($detect->isMobile()) : ?>
+							<nav id="main-navigation-mobile" class="outOfBounds">
+								<? superego_top_nav('main-nav-mobile'); ?>
+							</nav>
+
+							<div id="menu-toggle-mobile" class="flex flex-row justify-center items-center">
+								<div id="toggle-mobile" class="not-active">
+									<div class="inner">
+										<span id="line_1"></span>
+										<span id="line_2"></span>
+										<span id="line_3"></span>
+									</div>
+								</div>
+							</div>
+						<? else : ?>
+							<nav id="main-navigation">
+								<? superego_top_nav('main-nav'); ?>¨
+							</nav>
+						<? endif; ?>
+					</div>
+				</div>
+			</div>	
 		</header>
 		<!-- end #main-header -->

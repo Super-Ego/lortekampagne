@@ -14,8 +14,7 @@ const zoomAnimation = gsap.utils.toArray("[data-animation='zoom']");
 // Custom GSAP function
 function GSAPutility(array, start, repeat, options) {
   array.length > 0 &&
-    array.map(item => {
-
+    array.map((item) => {
       const defaultOptions = {
         scrollTrigger: {
           trigger: item,
@@ -30,12 +29,10 @@ function GSAPutility(array, start, repeat, options) {
 
       options = { ...defaultOptions, ...options };
       gsap.to(item, options);
-
     });
 }
 
 jQuery(document).ready(function ($) {
-
   // GSAPutility(fadeInAnimation, "center bottom", false, {
   //   duration: defaultDuration,
   //   ease: defaultEasing,
@@ -58,7 +55,6 @@ jQuery(document).ready(function ($) {
   //   opacity: 1,
   //   scale: 1,
   // });
-
 
   // Fade in animation
   fadeInAnimation &&
@@ -110,26 +106,89 @@ jQuery(document).ready(function ($) {
     });
 
   // Fade Up animation
-  fadeUpAnimation.forEach(fadeup => {
-    const anim = gsap.fromTo(fadeup,
+  fadeUpAnimation.forEach((fadeup) => {
+    const anim = gsap.fromTo(
+      fadeup,
       {
         autoAlpha: 0,
         y: 40,
         x: -40,
-        rotate: -2
+        rotate: -2,
       },
       {
         duration: 0.6,
         autoAlpha: 1,
         y: 0,
         x: 0,
-        rotate: 0
+        rotate: 0,
       }
     );
     ScrollTrigger.create({
       trigger: fadeup,
-      animation: anim
+      animation: anim,
     });
   });
 
+  // Menu animation mobile
+  const menuTimelineMobile = gsap.timeline({ paused: true });
+
+  menuTimelineMobile.to("#main-navigation-mobile", {
+    duration: 1,
+    ease: "power2.out",
+    top: 0,
+  });
+
+  menuTimelineMobile.from(
+    "#main-nav-mobile",
+    {
+      duration: 1,
+      ease: "power2.out",
+      y: -800,
+    },
+    "-=1"
+  );
+
+  $("#menu-toggle-mobile").click(function () {
+    if ($("#main-navigation-mobile").hasClass("outOfBounds")) {
+      menuTimelineMobile.play();
+      $("body").addClass("no-scroll");
+    } else {
+      menuTimelineMobile.reverse();
+      $("body").removeClass("no-scroll");
+    }
+
+    $("#toggle-mobile").toggleClass("active");
+    $("#main-header").toggleClass("open-menu");
+    $("#main-navigation-mobile").toggleClass("outOfBounds");
+  });
+
+  // Header video play on scroll
+  const coolVideo = document.querySelector("#cigVideo");
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "body",
+      start: "top top",
+      end: "bottom bottom-=150%",
+      scrub: true,
+    },
+  });
+
+  // wait until video metadata is loaded, so we can grab the proper duration before adding the onscroll animation
+  coolVideo.onloadedmetadata = function () {
+    tl.to(coolVideo, { currentTime: coolVideo.duration });
+  };
+
+  // Dealing with devices
+  function isTouchDevice() {
+    return (
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0
+    );
+  }
+  if (isTouchDevice()) {
+    coolVideo.play();
+    coolVideo.pause();
+  }
 });

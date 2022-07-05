@@ -43,17 +43,26 @@ $imgAttr = [];
 ?>
 
 <!-- Text & Image Block -->
-<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($className); ?>">
+<section id="<?= esc_attr($id) ?>" class="<?= esc_attr($className) ?>">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="gutenberg-content" data-animation="fade-in">
-                    <InnerBlocks allowedBlocks="<?= esc_attr(wp_json_encode($allowed_blocks)); ?>" template="<?= esc_attr(wp_json_encode($template)); ?>" />
+                    <InnerBlocks allowedBlocks="<?= esc_attr(
+                      wp_json_encode($allowed_blocks)
+                    ) ?>" template="<?= esc_attr(
+  wp_json_encode($template)
+) ?>" />
                 </div>
             </div>
             <div class="col-lg-6">
                 <figure class="image-figure">
-                    <?= wp_get_attachment_image($imgId, $imgSize, false, $imgAttr); ?>
+                    <?= wp_get_attachment_image(
+                      $imgId,
+                      $imgSize,
+                      false,
+                      $imgAttr
+                    ) ?>
                 </figure>
             </div>
         </div>

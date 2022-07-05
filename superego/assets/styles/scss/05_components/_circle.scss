@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the circle component.
+// -----------------------------------------------------------------------------
+
+article.se-circle {
+  height: 370px;
+  width: 370px;
+  max-width: 85vw;
+  max-height: 85vw;
+  margin-inline: auto;
+
+  p {
+    font-family: var(--wp--preset--font-family--heading-font);
+    max-width: 250px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: var(--wp--custom--font-weight--semi-bold);
+  }
+}

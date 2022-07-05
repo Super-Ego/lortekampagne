@@ -10,7 +10,7 @@ function site_scripts()
   /* SCRIPTS */
 
   // Register Main JS
-  wp_enqueue_script('main', THEME . '/assets/scripts/dist/main.js', ['jquery'], filemtime(DIR . '/assets/scripts/dist/main.js'), true);
+  wp_enqueue_script('main', THEME . '/assets/scripts/main.js', ['jquery'], filemtime(DIR . '/assets/scripts/dist/main.js'), true);
 
   // Register GSAP JS  (CDN)
   wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js', ['jquery'], null, true);
