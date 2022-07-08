@@ -112,8 +112,8 @@ jQuery(document).ready(function ($) {
       {
         autoAlpha: 0,
         y: 40,
-        x: -40,
-        rotate: -2,
+        x: 0,
+        rotate: 0,
       },
       {
         duration: 0.6,
@@ -145,7 +145,27 @@ jQuery(document).ready(function ($) {
       ease: "power2.out",
       y: -800,
     },
-    "-=1"
+    "-=0.8"
+  );
+
+  menuTimelineMobile.from(
+    "#menu-btn-mobile",
+    {
+      duration: 1,
+      ease: "power2.out",
+      y: -1000,
+    },
+    "-=1.2"
+  );
+
+  menuTimelineMobile.from(
+    "#hand",
+    {
+      duration: 1,
+      ease: "power2.out",
+      y: -1600,
+    },
+    "-=1.5"
   );
 
   $("#menu-toggle-mobile").click(function () {

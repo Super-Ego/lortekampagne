@@ -18,7 +18,8 @@
 // Paragraph styling
 p {
   margin-top: 0;
-  max-width: 88ch;
+  // max-width: 88ch;
+  max-width: 50ch;
 
   // Remove empty Gutenberg Paragraphs
   &:empty {

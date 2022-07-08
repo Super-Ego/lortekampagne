@@ -3,10 +3,6 @@ module.exports = {
   important: true,
   content: ["./superego/**/*.php", "./superego/theme.json"],
   theme: {
-    fontFamily: {
-      heading: ["Khand", "ui-sans-serif"],
-      body: ["Roboto", "ui-sans-serif"],
-    },
     extend: {
       fontSize: {
         "10xl": "10rem",
@@ -14,10 +10,20 @@ module.exports = {
         h2: "70px",
         h3: "50px",
         h4: "36px",
-        "h1-mobile": "60px",
+        "h1-mobile": "70px",
         "h2-mobile": "50px",
         "h3-mobile": "40px",
         "h4-mobile": "30px",
+        "90px": "90px",
+        "100px": "100px",
+        "120px": "120px",
+      },
+      fontFamily: {
+        overskrift: ["Khand", "ui-sans-serif"],
+        brodtekst: ["Roboto", "ui-sans-serif"],
+      },
+      screens: {
+        qhd: "2000px",
       },
     },
     container: {

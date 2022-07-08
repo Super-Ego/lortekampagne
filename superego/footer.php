@@ -21,24 +21,24 @@ $social_linkedin = get_theme_mod('setting_linkedin');
 $social_instagram = get_theme_mod('setting_instagram');
 ?>
 
-<footer id="footer" class="footer bg-secondary-d" role="contentinfo">
+<footer id="footer" class="footer bg-white py-20 lg:py-28" role="contentinfo">
 
-  <div class="container">
-
-    <div class="row">
-      <div class="col-md-12">
-        <nav role="navigation">
-          <? superego_footer_links(); ?>
-        </nav>
+  <div class="container" data-animation="fade-up"2>
+    <h4 class="text-black text-center text-h4-mobile md:text-h4">MED STØTTE OG OPBAKNING FRA</h4>
+    <div class="flex flex-col lg:grid lg:grid-cols-2 xl:grid-cols-4 justify-center items-center pt-10 lg:pt-14">
+      <div class="pb-8 xl:pb-0 lg:flex lg:justify-center lg:items-center">
+        <?= svg_image("superego") ?>
+      </div>
+      <div class="pb-8 xl:pb-0 lg:flex lg:justify-center lg:items-center">
+        <?= svg_image("hede-nielsen") ?>
+      </div>
+      <div class="pb-8 lg:pb-0 lg:flex lg:justify-center lg:items-center">
+        <?= svg_image("hansens-fond") ?>
+      </div>
+      <div class="lg:flex lg:justify-center lg:items-center">
+        <?= svg_image("horsens") ?>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col-md-12">
-        <p id="copyright" class="body-small">&copy; <?= date('Y'); ?> <? bloginfo('name'); ?> - Website by <a href="https://superego.nu/" class="body-link" target="_blank" rel="noreferrer">Superego</a></p>
-      </div>
-    </div>
-
   </div>
 
 </footer> <!-- end footer -->

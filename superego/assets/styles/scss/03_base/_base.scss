@@ -18,7 +18,7 @@ html {
   font-size: 16px;
   height: 100%;
   width: 100%;
-  //scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 // Basic body styling (Not backend)
@@ -26,6 +26,7 @@ body:not(.block-editor-writing-flow) {
   overflow-x: hidden;
   //margin-top: var(--se--header-height);
   accent-color: var(--wp--preset--color--primary-b);
+  scroll-padding-top: var(--se--header-height);
 }
 
 // Wrapper styling
@@ -93,6 +94,8 @@ input[type="number"] {
 // No scrolling class
 .no-scroll {
   overflow: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
 }
 
 // Hidden class
@@ -151,7 +154,7 @@ body {
   --se--content-width: 100%;
   --se--full-width: 1600px;
   --se--header-height: 6rem;
-  --se--section-padding: 3rem;
+  --se--section-padding: 4rem;
 
   // Transitions
   --se--transition: 300ms ease-out;
@@ -169,31 +172,31 @@ body {
 
   // Small Breakpoint
   @include mq(sm) {
-    --se--section-padding: 3rem;
+    --se--section-padding: 4rem;
     --se--content-width: 540px;
   }
 
   // Medium Breakpoint
   @include mq(md) {
-    --se--section-padding: 4rem;
+    --se--section-padding: 5rem;
     --se--content-width: 720px;
   }
 
   // Large Breakpoint
   @include mq(lg) {
-    --se--section-padding: 5rem;
+    --se--section-padding: 6rem;
     --se--content-width: 960px;
   }
 
   // XL Breakpoint
   @include mq(xl) {
-    --se--section-padding: 6rem;
+    --se--section-padding: 7rem;
     --se--content-width: 1140px;
   }
 
   // XXL Breakpoint
   @include mq(xxl) {
-    --se--section-padding: 7rem;
+    --se--section-padding: 8rem;
     --se--content-width: 1320px;
   }
 

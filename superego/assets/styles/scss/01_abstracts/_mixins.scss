@@ -28,23 +28,24 @@
 @mixin Button {
   position: relative;
   padding: 0 2rem;
-  height: 3.5rem;
-  width: fit-content;
+  height: 3rem;
+  min-width: 110px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 0;
   max-width: 420px;
-  background-color: var(--wp--preset--color--accent-b);
+  background-color: var(--wp--preset--color--secondary-b);
   color: var(--wp--preset--color--light-b);
-  font-family: var(--se--button-font);
+  font-family: var(--wp--preset--font-family--heading-font);
   transition: var(--se--transition);
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: var(--wp--custom--font-weight--bold);
+  font-size: 1.5rem;
+  line-height: 3rem;
   text-transform: none;
   text-decoration: none;
-  border-radius: 0;
+  border-radius: 100px;
   cursor: pointer;
   white-space: nowrap;
   outline: 0;
@@ -52,13 +53,17 @@
   user-select: none;
   border: 0;
 
+  @media only screen and (min-width: 992px) {
+    width: fit-content;
+  }
+
   &:hover {
-    background-color: var(--wp--preset--color--accent-d);
+    background-color: var(--wp--preset--color--secondary-d);
   }
 
   &:active {
     transform: translateY(3px);
-    background-color: var(--wp--preset--color--accent-b);
+    background-color: var(--wp--preset--color--secondary-b);
   }
 }
 
@@ -83,7 +88,7 @@
     left: 0;
     width: 100%;
     height: 1px;
-    background-color: var(--wp--preset--color--accent-b);
+    background-color: var(--wp--preset--color--secondary-b);
     transform: scaleX(0);
     transition: transform var(--se--transition);
     transform-origin: right;

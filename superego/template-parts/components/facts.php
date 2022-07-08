@@ -16,7 +16,7 @@ $animate = isset($args['animate']) ? $args['animate'] : 'fade-up';
 
 
 <!-- Facts component -->
-<article id="se-facts-<?= $id ?>" class="se-circle group flex flex-col justify-center items-center overflow-hidden text-center" data-animation="fade-up">
-    <p class="font-heading text-h1-mobile lg:text-h1 font-semibold text-white"><?= $big_number ?></p>
-    <p class=""><?= $body ?></p>
+<article id="se-fact-<?= $id ?>" class="se-fact flex flex-col justify-start items-center overflow-hidden text-center" data-animation="fade-up">
+    <h3 class="font-overskrift text-h1-mobile md:text-100px xl:text-120px 2xl:text-h1 font-semibold pb-4"><?= $big_number ?></h3>
+    <p class="text-primary-d-2"><?= $body ?></p>
 </article>

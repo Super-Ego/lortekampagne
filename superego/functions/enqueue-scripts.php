@@ -24,6 +24,12 @@ function site_scripts()
   // Register Formidable JS (Enable on pages / blocks with Formidable forms)
   //wp_enqueue_script('formidable-js', THEME . '/assets/scripts/formidable.js', ['jquery'], filemtime(DIR . '/assets/scripts/formidable.js'), false);
 
+  // Register Fancybox 4 Style (CDN)
+  wp_enqueue_style('fancybox-style', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css', [], null, 'all');
+
+  // PLYR
+  wp_enqueue_script('plyr-js', 'https://cdn.plyr.io/3.6.12/plyr.js', ['jquery'], null, false);
+
   // Register frontpage script & stylesheet
   //if (is_front_page()) :
   //wp_enqueue_style('home-style', THEME . '/assets/styles/css/home.css', [], filemtime(DIR . '/assets/styles/css/home.css'), 'all');
@@ -44,6 +50,12 @@ function site_scripts()
 
   // Register Cookieinformation Style (Enable if Cookieinformation)
   //wp_enqueue_style('cookieinformation-style', THEME . '/assets/styles/cookieinformation.css', [], filemtime(get_template_directory() . '/assets/styles/cookieinformation.css'), 'all');
+
+  // Register Fancybox 4 JS (CDN)
+  wp_enqueue_script('fancybox-js', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js', ['jquery'], null, false);
+
+  // PLYR
+  wp_enqueue_style('plyr-style', 'https://cdn.plyr.io/3.6.12/plyr.css', [], null, 'all');
 
   /* FONTS */
 

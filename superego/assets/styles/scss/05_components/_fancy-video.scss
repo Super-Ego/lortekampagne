@@ -1,0 +1,81 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the fancy video components.
+// -----------------------------------------------------------------------------
+
+@use "../01_abstracts/index" as *;
+
+body .se-fancy_video_left,
+body .se-fancy_video_right {
+  &#se-fancy_video_left-1,
+  &#se-fancy_video_left-2 {
+    margin-bottom: 2.5rem;
+
+    @include mq(lg) {
+      margin-bottom: 3.5rem;
+    }
+
+    @include mq(xl) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  h3 {
+    @include mq(lg) {
+      max-width: 15ch;
+      text-align: left;
+    }
+  }
+
+  .vid-col {
+    position: relative;
+
+    .btn {
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  .image-figure {
+    &.add-overlay {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+        opacity: 0.3;
+        z-index: 1;
+      }
+    }
+  }
+}
+
+video.fancybox__html5video,
+.plyr--video {
+  outline: 0 !important;
+
+  * {
+    outline: 0 !important;
+  }
+}
+
+// PLYR videos
+
+body .plyr--video {
+  --plyr-color-main: var(--wp--preset--color--secondary-b);
+
+  .plyr__progress__buffer {
+    color: transparent;
+  }
+
+  .plyr__control--overlaid {
+    padding: 20px;
+    --plyr-control-icon-size: 20px;
+  }
+}

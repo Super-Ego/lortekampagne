@@ -5,7 +5,6 @@
 @use "../01_abstracts/mixins" as *;
 
 body footer#footer {
-  padding: var(--se--section-padding) 0;
   background: var(--wp--preset--color--light-1);
   position: relative;
 

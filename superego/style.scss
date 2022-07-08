@@ -32,7 +32,7 @@ body {
   --se--content-width: 100%;
   --se--full-width: 1600px;
   --se--header-height: 6rem;
-  --se--section-padding: 3rem;
+  --se--section-padding: 4rem;
 
   // Transitions
   --se--transition: 300ms ease-out;
@@ -50,31 +50,31 @@ body {
 
   // Small Breakpoint
   @include mq(sm) {
-    --se--section-padding: 3rem;
+    --se--section-padding: 4rem;
     --se--content-width: 540px;
   }
 
   // Medium Breakpoint
   @include mq(md) {
-    --se--section-padding: 4rem;
+    --se--section-padding: 5rem;
     --se--content-width: 720px;
   }
 
   // Large Breakpoint
   @include mq(lg) {
-    --se--section-padding: 5rem;
+    --se--section-padding: 6rem;
     --se--content-width: 960px;
   }
 
   // XL Breakpoint
   @include mq(xl) {
-    --se--section-padding: 6rem;
+    --se--section-padding: 7rem;
     --se--content-width: 1140px;
   }
 
   // XXL Breakpoint
   @include mq(xxl) {
-    --se--section-padding: 7rem;
+    --se--section-padding: 8rem;
     --se--content-width: 1320px;
   }
 

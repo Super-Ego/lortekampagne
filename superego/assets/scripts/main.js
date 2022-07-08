@@ -8,6 +8,28 @@ jQuery(document).ready(function ($) {
   // Remove no-js class from HTML
   $("html").removeClass("no-js");
 
+  // PLYR
+  var initializePlyr = function ($) {
+    // const players = Array.from(document.querySelectorAll("video")).map(
+    //   (p) => new Plyr(p)
+    // );
+    const playersFancybox = Array.from(
+      document.querySelectorAll(".fancybox__html5video")
+    ).map((p) => new Plyr(p));
+  };
+
+  initializePlyr();
+
+  Fancybox.bind("[data-fancybox]", {
+    on: {
+      ready: (fancybox) => {
+        setTimeout(() => {
+          initializePlyr();
+        }, 20);
+      },
+    },
+  });
+
   // Initialize AOS Animation
   // AOS.init({
   //   duration: 800,

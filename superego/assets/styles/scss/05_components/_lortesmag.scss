@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the lortesmag component.
+// -----------------------------------------------------------------------------
+
+@use "../01_abstracts/mixins" as *;
+
+body .se-lortesmag {
+  h2 {
+    max-width: 15ch;
+  }
+
+  a {
+    transition: var(--se--transition);
+  }
+
+  .btn {
+    height: 4rem;
+    line-height: 4rem;
+    max-width: 300px;
+
+    @include mq(lg) {
+      min-width: 240px;
+      margin-left: 1rem;
+    }
+  }
+}
