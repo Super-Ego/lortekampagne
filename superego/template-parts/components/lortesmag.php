@@ -34,10 +34,10 @@ global $detect;
         <div>
             <figure class="image-figure">
                 <?= wp_get_attachment_image(
-                  $img_id_left,
-                  "full",
-                  false
-                ) ?>            
+                    $img_id_left,
+                    "full",
+                    false
+                ) ?>
             </figure>
         </div>
     <? endif; ?>
@@ -45,18 +45,18 @@ global $detect;
         <h2 class="text-h3-mobile md:text-h2-mobile lg:text-h3 xl:text-h2 2xl:text-90px qhd:text-100px font-semibold mx-auto">
             <span class="text-secondary-b"><?= $orange_text ?></span>
             <span class="text-white"><?= $white_text ?><br>
-            <!-- <?= $call ?></span><br>
+                <!-- <?= $call ?></span><br>
             <a href="<?= $phone_url ?>" class="text-primary-l hover:text-secondary-b"><?= $grey_text ?></a> -->
         </h2>
-        <a class="btn mx-auto mt-8" href="#!" target="_blank">KONTAKT LUNGEFORENINGEN</a>
+        <a class="btn mx-auto mt-8" href="https://www.lunge.dk/lokal/horsens-lokalafdeling" target="_blank">KONTAKT LUNGEFORENINGEN</a>
     </div>
     <div>
         <figure class="image-figure">
             <?= wp_get_attachment_image(
-              $img_id_right,
-              "full",
-              false
-            ) ?>            
+                $img_id_right,
+                "full",
+                false
+            ) ?>
         </figure>
     </div>
 </article>

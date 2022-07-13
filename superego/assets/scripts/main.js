@@ -55,4 +55,25 @@ jQuery(document).ready(function ($) {
   //   $(this).parent().find('> .sub-menu').slideToggle();
   //   $(this).parent().toggleClass('active');
   // });
+
+  // Swiper code wrapped in function to initialize inside document.ready
+  var initializeSwiper = function ($block) {
+    var swiper = new Swiper(".swiper-slider", {
+      slidesPerView: 1,
+      spaceBetween: 16,
+      grabCursor: true,
+      loop: false,
+      pagination: {
+        el: ".swiper-pagination",
+        dynamicBullets: true,
+      },
+      breakpoints: {
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  };
+
+  initializeSwiper();
 }); // End document.ready

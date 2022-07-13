@@ -116,13 +116,17 @@ body header#main-header {
 
     ul#main-nav-mobile {
       width: 100%;
-      padding: 10% 0 0;
+      padding: 20% 0 0;
       margin: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       font-weight: var(--wp--custom--font-weight--normal);
+
+      @media screen and (max-height: 700px) {
+        padding: 5% 0 0;
+      }
 
       > li.menu-item {
         position: relative;

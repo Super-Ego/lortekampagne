@@ -21,22 +21,25 @@ $social_linkedin = get_theme_mod('setting_linkedin');
 $social_instagram = get_theme_mod('setting_instagram');
 ?>
 
-<footer id="footer" class="footer bg-white py-20 lg:py-28" role="contentinfo">
+<footer id="footer" class="footer bg-transparent py-20 lg:py-28" role="contentinfo">
 
-  <div class="container" data-animation="fade-up"2>
-    <h4 class="text-black text-center text-h4-mobile md:text-h4">MED STØTTE OG OPBAKNING FRA</h4>
-    <div class="flex flex-col lg:grid lg:grid-cols-2 xl:grid-cols-4 justify-center items-center pt-10 lg:pt-14">
+  <div class="container lg:w-screen lg:px-0 lg:mx-0" data-animation="fade-up" 2>
+    <h4 class="lg:w-screen text-white text-center text-h4-mobile md:text-h4 uppercase">Med støtte og opbakning fra</h4>
+    <div class="lg:w-screen lg:px-6 flex flex-col lg:grid lg:gap-x-8 2xl:gap-x-2 lg:grid-cols-5 justify-center items-center pt-10 lg:pt-14">
       <div class="pb-8 xl:pb-0 lg:flex lg:justify-center lg:items-center">
-        <?= svg_image("superego") ?>
+        <?= svg_image("superego_neg") ?>
       </div>
       <div class="pb-8 xl:pb-0 lg:flex lg:justify-center lg:items-center">
-        <?= svg_image("hede-nielsen") ?>
+        <?= svg_image("hede-nielsen_neg") ?>
       </div>
-      <div class="pb-8 lg:pb-0 lg:flex lg:justify-center lg:items-center">
-        <?= svg_image("hansens-fond") ?>
+      <div class="pb-8 xl:pb-0 lg:flex lg:justify-center lg:items-center">
+        <?= svg_image("horsens_neg") ?>
+      </div>
+      <div class="pb-8 xl:pb-0 lg:pb-0 lg:flex lg:justify-center lg:items-center">
+        <?= svg_image("hansens-fond_neg") ?>
       </div>
       <div class="lg:flex lg:justify-center lg:items-center">
-        <?= svg_image("horsens") ?>
+        <?= svg_image("lungeforeningen_neg") ?>
       </div>
     </div>
   </div>

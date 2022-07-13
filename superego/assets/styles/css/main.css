@@ -545,7 +545,7 @@ html {
 body:not(.block-editor-writing-flow) {
   overflow-x: hidden;
   accent-color: var(--wp--preset--color--primary-b);
-  scroll-padding-top: var(--se--header-height);
+  scroll-padding-top: 6rem;
 }
 
 #wrapper {
@@ -1088,7 +1088,7 @@ body header#main-header #main-navigation-mobile {
 }
 body header#main-header #main-navigation-mobile ul#main-nav-mobile {
   width: 100%;
-  padding: 10% 0 0;
+  padding: 20% 0 0;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1104,6 +1104,11 @@ body header#main-header #main-navigation-mobile ul#main-nav-mobile {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: var(--wp--custom--font-weight--normal);
+}
+@media screen and (max-height: 700px) {
+  body header#main-header #main-navigation-mobile ul#main-nav-mobile {
+    padding: 5% 0 0;
+  }
 }
 body header#main-header #main-navigation-mobile ul#main-nav-mobile > li.menu-item {
   position: relative;
@@ -1628,6 +1633,17 @@ body .page-background .image-figure {
 body .page-background .image-figure img {
   width: 100%;
   height: 100%;
+}
+
+body .swiper-container {
+  --swiper-pagination-bullet-inactive-color: var(
+    --wp--preset--color--secondary-b
+  );
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-color: var(--wp--preset--color--secondary-b);
+}
+body .swiper-container .swiper-pagination-horizontal {
+  bottom: -30px;
 }
 
 :where(.wp-block-group.has-background) {

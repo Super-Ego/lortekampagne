@@ -18,7 +18,7 @@ $animate = isset($args['animate']) ? $args['animate'] : 'fade-up';
 
 
 <!-- Circle component -->
-<article id="se-circle-<?= $id ?>" class="se-circle group flex flex-col justify-center items-center border relative border-light-b rounded-full overflow-hidden text-center" data-animation="fade-up">
+<article id="se-circle-<?= $id ?>" class="se-circle group flex flex-col justify-center items-center border relative border-light-b rounded-full overflow-hidden text-center">
     <? if($body_orange): ?>
         <p class="text-secondary-b"><?= $body_orange ?></p>
     <? endif; ?>

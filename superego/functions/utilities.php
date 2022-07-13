@@ -26,7 +26,7 @@ function lang(string $string)
   }
 }
 
-// Swiper enqueue function
+//  enqueue function
 function se_enqueue_swiper()
 {
   if (!wp_script_is('swiper')) :

@@ -23,7 +23,7 @@ se_enqueue_swiper();
 ?>
 
 <!-- Swiper Template Block -->
-<section id="<?= esc_attr($id); ?>" class="<?= esc_attr($className); ?>">
+<section id="<?= esc_attr($id) ?>" class="<?= esc_attr($className) ?>">
     <div class="container">
         <div class="row">
             <div class="col">

@@ -27,3 +27,17 @@ body .page-background {
     }
   }
 }
+
+body .swiper-container {
+  --swiper-pagination-bullet-inactive-color: var(
+    --wp--preset--color--secondary-b
+  );
+
+  --swiper-pagination-bullet-inactive-opacity: 0.5;
+
+  --swiper-pagination-color: var(--wp--preset--color--secondary-b);
+
+  .swiper-pagination-horizontal {
+    bottom: -30px;
+  }
+}

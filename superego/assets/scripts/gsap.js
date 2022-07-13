@@ -182,6 +182,20 @@ jQuery(document).ready(function ($) {
     $("#main-navigation-mobile").toggleClass("outOfBounds");
   });
 
+  $(".menu-item a").click(function () {
+    menuTimelineMobile.reverse();
+    $("#main-navigation-mobile").addClass("outOfBounds");
+    $("#toggle-mobile").toggleClass("active");
+    $("body").removeClass("no-scroll");
+  });
+
+  $("#menu-btn-mobile").click(function () {
+    menuTimelineMobile.reverse();
+    $("#main-navigation-mobile").addClass("outOfBounds");
+    $("#toggle-mobile").toggleClass("active");
+    $("body").removeClass("no-scroll");
+  });
+
   // Header video play on scroll
   const coolVideo = document.querySelector("#cigVideo");
 
