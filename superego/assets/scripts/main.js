@@ -62,7 +62,7 @@ jQuery(document).ready(function ($) {
       slidesPerView: 1,
       spaceBetween: 16,
       grabCursor: true,
-      loop: false,
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
@@ -70,6 +70,9 @@ jQuery(document).ready(function ($) {
       breakpoints: {
         1024: {
           slidesPerView: 3,
+        },
+        2000: {
+          slidesPerView: 4,
         },
       },
     });

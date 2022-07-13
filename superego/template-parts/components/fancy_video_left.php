@@ -26,6 +26,6 @@ $animate = isset($args['animate']) ? $args['animate'] : 'fade-up';
         <a data-fancybox data-type="html5video" href="<?= $vid_url ?>" class="btn">AFSPIL VIDEO</a>
     </div>
     <div class="text-col order-first lg:order-last py-8 lg:py-0 bg-black w-full lg:h-full lg:flex lg:justify-center lg:items-center lg:px-4">
-        <h3 class="text-h3-mobile lg:text-h3 font-semibold"><?= $heading ?></h3>
-    </div>    
+        <h3 class="text-h3-mobile lg:text-h3 font-semibold uppercase"><?= $heading ?></h3>
+    </div>
 </article>

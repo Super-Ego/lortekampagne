@@ -42,7 +42,7 @@ global $detect;
         </div>
     <? endif; ?>
     <div class="py-8 lg:py-0">
-        <h2 class="text-h3-mobile md:text-h2-mobile lg:text-h3 xl:text-h2 2xl:text-90px qhd:text-100px font-semibold mx-auto">
+        <h2 class="text-h3-mobile md:text-h2-mobile lg:text-h3 xl:text-h2 2xl:text-90px qhd:text-100px font-semibold mx-auto uppercase">
             <span class="text-secondary-b"><?= $orange_text ?></span>
             <span class="text-white"><?= $white_text ?><br>
                 <!-- <?= $call ?></span><br>

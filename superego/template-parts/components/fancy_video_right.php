@@ -20,8 +20,8 @@ $animate = isset($args['animate']) ? $args['animate'] : 'fade-up';
 <!-- Fancy video component -->
 <article id="se-fancy_video_right-<?= $id ?>" class="se-fancy_video_right flex flex-col justify-center items-center overflow-hidden text-center lg:grid lg:grid-cols-2" data-animation="fade-up">
     <div class="text-col lg:grid-cols-5 py-8 lg:py-0 bg-secondary-b w-full lg:h-full lg:flex lg:justify-center lg:items-center lg:px-4">
-        <h3 class="text-h3-mobile lg:text-h3 font-semibold"><?= $heading ?></h3>
-    </div>    
+        <h3 class="text-h3-mobile lg:text-h3 font-semibold uppercase"><?= $heading ?></h3>
+    </div>
     <div class="vid-col lg:grid-cols-7 w-full">
         <figure class="image-figure add-overlay">
             <?= wp_get_attachment_image($img_id, "full", false) ?>

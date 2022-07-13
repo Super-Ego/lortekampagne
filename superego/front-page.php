@@ -30,8 +30,8 @@ se_enqueue_swiper();
 								<div class="swiper-slide">
 									<?
 									component('circle', [
-										'body-orange' => "RYGNING GIVER",
-										'body-white' => "DIG GULE TÆNDER OG DÅRLIG ÅNDE",
+										'body-orange' => "Rygning giver",
+										'body-white' => "dig gule tænder og dårlig ånde.",
 										'body-grey' => "Det er noget lort, ik?",
 										'id' => 1,
 									]);
@@ -40,8 +40,8 @@ se_enqueue_swiper();
 								<div class="swiper-slide">
 									<?
 									component('circle', [
-										'body-orange' => "CIGARETRØG",
-										'body-white' => "INDEHOLDER MERE END 7000 FORSKELLIGE STOFFER.",
+										'body-orange' => "Cigaretrøg",
+										'body-white' => "stinker, og det gør du også.",
 										'body-grey' => "Det er noget lort, ik?",
 										'id' => 2,
 									]);
@@ -50,10 +50,60 @@ se_enqueue_swiper();
 								<div class="swiper-slide">
 									<?
 									component('circle', [
-										'body-orange' => "NIKOTIN BLEV",
-										'body-white' => "TIDLIGERE BRUGT SOM INSEKTGIFT.",
+										'body-orange' => "Du får",
+										'body-white' => "grå, kedelig og rynket hud af at ryge.",
 										'body-grey' => "Det er noget lort, ik?",
 										'id' => 3,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Cigaretrøg",
+										'body-white' => "indeholder mere end 7000 forskellige stoffer.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 4,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Cigaretrøg",
+										'body-white' => "indeholder benzin og ammoniak.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 5,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Nikontin blev",
+										'body-white' => "tidligere brugt som insektgift.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 6,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Rygning",
+										'body-white' => "øger risikoen for mere end 15 kræftformer.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 7,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Cigaretter",
+										'body-white' => "er skabt til at gøre dig afhængig af dem.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 8,
 									]);
 									?>
 								</div>
@@ -75,8 +125,8 @@ se_enqueue_swiper();
 							?>
 							<?
 							component('facts', [
-								'big-number' => "15",
-								'body' => "Rygning øger risikoen for lungekræft og mere end 15 andre kræftformer.",
+								'big-number' => "70",
+								'body' => "kræftfremkaldende stoffer i cigaretrøg.",
 								'id' => 2,
 							]);
 							?>
@@ -95,7 +145,7 @@ se_enqueue_swiper();
 					<div class="container">
 						<?
 						component('fancy_video_left', [
-							'heading' => "DET ER NOGET LORT, DU RYGER!!!",
+							'heading' => "Det er noget lort, du ryger!!!",
 							'vid_url' => "/wp-content/uploads/2022/07/RYGEKAMPAGNE-MODEL-1-RYGENING-BIO.mp4",
 							'img_id' => "29",
 							'id' => 1,
@@ -103,7 +153,7 @@ se_enqueue_swiper();
 						?>
 						<?
 						component('fancy_video_right', [
-							'heading' => "DET ER NOGET LORT, DU RYGER!!!",
+							'heading' => "Det er noget lort, du ryger!!!",
 							'vid_url' => "/wp-content/uploads/2022/07/RYGEKAMPAGNE-MODEL-2-RYGENING-BIO.mp4",
 							'img_id' => "31",
 							'id' => 1,
@@ -118,8 +168,8 @@ se_enqueue_swiper();
 						if ($detect->isMobile()) : {
 								component('lortesmag', [
 									'img-id-left' => "",
-									'orange-text' => "TRÆT AF",
-									'white-text' => "LORTESMAG I MUNDEN?",
+									'orange-text' => "Træt af",
+									'white-text' => "lortesmag i munden?",
 									'img-id-right' => "43",
 									'id' => 1,
 								]);
@@ -127,8 +177,8 @@ se_enqueue_swiper();
 						else : {
 								component('lortesmag', [
 									'img-id-left' => "35",
-									'orange-text' => "TRÆT AF",
-									'white-text' => "LORTESMAG I MUNDEN?",
+									'orange-text' => "Træt af",
+									'white-text' => "lortesmag i munden?",
 									'img-id-right' => "36",
 									'id' => 1,
 								]);
@@ -152,17 +202,17 @@ se_enqueue_swiper();
 										'body-orange' => "Snus ødelægger",
 										'body-white' => "dit tandkød.",
 										'body-grey' => "Det er noget lort, ik?",
-										'id' => 4,
+										'id' => 8,
 									]);
 									?>
 								</div>
 								<div class="swiper-slide">
 									<?
 									component('circle', [
-										'body-orange' => "Snus indeholder",
-										'body-white' => "op til 40 gange mere nikotin end cigaretter.",
+										'body-orange' => "Snus misfarver",
+										'body-white' => "dine tænder og gør dit spyt brunt.",
 										'body-grey' => "Det er noget lort, ik?",
-										'id' => 5,
+										'id' => 9,
 									]);
 									?>
 								</div>
@@ -170,9 +220,39 @@ se_enqueue_swiper();
 									<?
 									component('circle', [
 										'body-orange' => "Nikotin i snus",
-										'body-white' => "Kan skade din hjerne.",
+										'body-white' => "gør dig afhængig.",
 										'body-grey' => "Det er noget lort, ik?",
-										'id' => 6,
+										'id' => 10,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Du bliver",
+										'body-white' => "lige så afhængig af snus som cigaretter.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 11,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Nikotin i snus",
+										'body-white' => "påvirker din hjernes udvikling.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 12,
+									]);
+									?>
+								</div>
+								<div class="swiper-slide">
+									<?
+									component('circle', [
+										'body-orange' => "Nikotin i snus",
+										'body-white' => "påvirker din opmærksomhed og indlæring.",
+										'body-grey' => "Det er noget lort, ik?",
+										'id' => 13,
 									]);
 									?>
 								</div>
@@ -186,7 +266,7 @@ se_enqueue_swiper();
 					<div class="container">
 						<?
 						component('fancy_video_left', [
-							'heading' => "SNUS ER NOGET LORT!!!",
+							'heading' => "Snus er noget lort!!!",
 							'vid_url' => "/wp-content/uploads/2022/07/RYGEKAMPAGNE-MODEL-2-SNUS-BIO.mp4",
 							'img_id' => "41",
 							'id' => 2,
@@ -194,7 +274,7 @@ se_enqueue_swiper();
 						?>
 						<?
 						component('fancy_video_right', [
-							'heading' => "SNUS ER NOGET LORT!!!",
+							'heading' => "Snus er noget lort!!!",
 							'vid_url' => "/wp-content/uploads/2022/07/RYGEKAMPAGNE-MODEL-1-SNUS-BIO.mp4",
 							'img_id' => "42",
 							'id' => 2,
@@ -209,8 +289,8 @@ se_enqueue_swiper();
 						if ($detect->isMobile()) : {
 								component('lortesmag', [
 									'img-id-left' => "",
-									'orange-text' => "TRÆT AF",
-									'white-text' => "LORTESMAG I MUNDEN?",
+									'orange-text' => "Træt af",
+									'white-text' => "lortesmag i munden?",
 									'img-id-right' => "44",
 									'id' => 2,
 								]);
@@ -218,8 +298,8 @@ se_enqueue_swiper();
 						else : {
 								component('lortesmag', [
 									'img-id-left' => "43",
-									'orange-text' => "TRÆT AF",
-									'white-text' => "LORTESMAG I MUNDEN?",
+									'orange-text' => "Træt af",
+									'white-text' => "lortesmag i munden?",
 									'img-id-right' => "44",
 									'id' => 2,
 								]);
