@@ -4,8 +4,7 @@ $code_head = get_theme_mod('setting_header_code');
 $code_body = get_theme_mod('setting_body_code');
 $theme_color = get_theme_mod('setting_theme_color');
 
-//$cig_video_url = wp_get_attachment_url(26);
-$cig_video_url = wp_get_attachment_url(27);
+$cig_video_url = wp_get_attachment_url(61);
 
 
 // get global Mobile Detect
@@ -55,10 +54,10 @@ Telefon: +45 78 70 29 29 - Email: horsens@superego.nu
 	endif; ?>
 
 	<div id="wrapper" class="wrapper">
-		<header id="main-header" class="w-full header bg-primary-d-2 h-24 flex items-center justify-center fixed" role="banner" aria-label="Site header">
-			<div class="container mx-0 h-full bg-primary-d-2">
-				<div class="grid grid-cols-12 justify-center items-center h-full"> 				
-					<div class="col-span-10 lg:col-span-4 max-h-24">	
+		<header id="main-header" class="w-full header bg-vid-bg h-24 flex items-center justify-center fixed" role="banner" aria-label="Site header">
+			<div class="container mx-0 h-full bg-vid-bg">
+				<div class="grid grid-cols-12 justify-center items-center h-full">
+					<div class="col-span-10 lg:col-span-4 max-h-24">
 						<video src="<?= $cig_video_url ?>" id="cigVideo" class="max-h-24" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted"></video>
 					</div>
 
@@ -91,7 +90,7 @@ Telefon: +45 78 70 29 29 - Email: horsens@superego.nu
 						<? endif; ?>
 					</div>
 				</div>
-			</div>	
+			</div>
 		</header>
 		<!-- end #main-header -->
 

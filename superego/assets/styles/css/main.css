@@ -540,12 +540,12 @@ html {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body:not(.block-editor-writing-flow) {
   overflow-x: hidden;
   accent-color: var(--wp--preset--color--primary-b);
-  scroll-padding-top: 6rem;
 }
 
 #wrapper {
@@ -1083,7 +1083,7 @@ body header#main-header #main-navigation-mobile {
   width: 100vw;
   margin-top: var(--se--header-height);
   height: calc(100% - var(--se--header-height));
-  background-color: var(--wp--preset--color--primary-d-2);
+  background-color: var(--wp--preset--color--vid-bg);
   z-index: -2;
 }
 body header#main-header #main-navigation-mobile ul#main-nav-mobile {

@@ -19,6 +19,7 @@ html {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 // Basic body styling (Not backend)
@@ -26,7 +27,6 @@ body:not(.block-editor-writing-flow) {
   overflow-x: hidden;
   //margin-top: var(--se--header-height);
   accent-color: var(--wp--preset--color--primary-b);
-  scroll-padding-top: 6rem;
 }
 
 // Wrapper styling

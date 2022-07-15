@@ -95,6 +95,16 @@
                     "slug": "black",
                     "color": "#000000",
                     "name": "Sort"
+                },
+                {
+                    "slug": "vid-bg",
+                    "color": "#413F41",
+                    "name": "Video baggrund"
+                },
+                {
+                    "slug": "vid-bg-android",
+                    "color": "#393839",
+                    "name": "Video baggrund"
                 }
             ]
         },
